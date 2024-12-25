@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="box" class="container">
+<ul id="list" class="header">
+  <li>Home</li>
+  <li>About</li>
+  <li>Contact us</li>
+  <li>Follow us</li>
+  <li>Summary</li>
+</ul>
+<div class="container">
+  another container
+</div>
+<script>
+  let box = document.getElementById('box');
+  console.log(box);
+  let list = document.getElementById('list')
+  console.log(list);
+  let container = document.getElementsByClassName('container')
+  console.log(container);
+  let selector = document.querySelector('#list');
+  console.log('selector returns ',selector);
+  let sel = document.querySelectorAll('#list>li');
+  console.log(sel);
+
+
+</script>
+  </div>
+</body>
+</html>

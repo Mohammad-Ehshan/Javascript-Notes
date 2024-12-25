@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background-color: aqua;
+        color: red;
+        cursor: pointer;
+        border: 4px solid black;
+        border-radius: 8px;
+        margin: 15px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FUNCTION</h1>
+    <div id="para">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat,
+      aspernatur culpa. Sed, vitae hic cum recusandae dolor vel alias quia natus
+      mollitia, reiciendis labore optio aliquam inventore animi, doloremque
+      ipsam eos officiis voluptatum? Voluptatum ea animi eveniet a expedita non
+      praesentium asperiores omnis possimus ab quidem repellendus, atque
+      consequatur autem laudantium at beatae tempora dolor iure illum. Quas,
+      vero. Cupiditate facilis molestias vitae quasi, hic omnis atque dolorem
+      impedit velit sit id sint, consequatur ex odio quos non expedita. Earum et
+      qui provident accusantium maxime modi quo saepe. Accusantium, neque ipsa
+      esse deserunt et laborum magnam nihil, cupiditate voluptas quae pariatur
+      dolores minus expedita earum nobis eum, sint voluptatem rerum in quam
+      repellat numquam facere obcaecati. Aliquam, explicabo temporibus
+      doloremque ullam, ipsam modi fugit dolores nam molestiae assumenda omnis
+      suscipit nisi. Excepturi, alias. Eligendi consequuntur sunt nihil minima
+      alias ab expedita quia iste modi itaque, debitis laborum aspernatur,
+      officiis dignissimos, facilis ullam perspiciatis? Est, fuga eaque omnis
+      sunt quia laudantium hic provident similique praesentium, recusandae
+      cumque optio expedita, dolores inventore itaque ab eveniet. Perferendis,
+      vel! Asperiores est laboriosam molestias harum, aliquid pariatur eius
+      laborum expedita, quia, rerum nisi similique exercitationem? Veniam atque
+      magni asperiores nemo iusto inventore corrupti eum vero.
+    </div>
+    <button id="btn" onclick="togglehide()">Show / Hide</button>
+    <script>
+      let para = document.getElementById('para');
+      para.addEventListener('mouseover', function run(){
+        console.log(`mouse went inside`);
+      });
+      para.addEventListener('mouseout', function run(){
+        console.log(`mouse went outside`);
+      });
+      function togglehide() {
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        if (para.style.display != "none") {
+          para.style.display = "none";
+        } else {
+          para.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

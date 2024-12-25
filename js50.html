@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  
+  <script>
+    var char = "i am a boy";
+    console.log(char);
+    var position = char.indexOf('a');
+    console.log(position);
+    position = char.lastIndexOf('a');
+    console.log(position);
+    // var substr = char.slice(2,-2);
+    // console.log(substr);
+    var substring = char.substring(2,5);
+    console.log(substring);
+    var substr = char.substr(2,6);
+    console.log(substr);
+    var replaced = char.replace('boy','men');
+    console.log(replaced);
+    console.log(replaced.toUpperCase('men'));
+    console.log(replaced.toLowerCase());
+    var newstring = char.concat(' hello')
+   console.log(newstring);
+    var whitespaces = "    this contain    blank     "
+    console.log(whitespaces);
+    console.log(whitespaces.trim());
+    var char2 = char.charCodeAt(9);
+    console.log(char2);
+    console.log(char[5]);
+</script>
+</body>
+</html>

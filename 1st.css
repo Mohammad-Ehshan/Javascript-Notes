@@ -1,0 +1,30 @@
+/* body{
+  background-color: aqua;
+}
+.newclass{
+  color: blue;
+  font-weight: bolder;
+  font-size: 40px;
+}
+h4{
+  visibility: hidden;
+}*/
+.paragraph{
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+  background-color: yellow;
+  border:2px solid brown;
+} 
+#btn1 {
+  background-color: aqua;
+  color: red;
+}
+.dark {
+  background-color: black;
+  color: white;
+}
+.light {
+  background-color: aquamarine;
+  color: brown;
+}
